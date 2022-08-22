@@ -4,68 +4,82 @@
 }
 
 
-<div class="text-center">
 
-    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+<div class="row">
+    <div class="col-6">
         <a class="btn btn-primary rounded-circle btn-lg" title="Adicionar novo contato" asp-controller="Contato" asp-action="Criar"><i class="fa-solid fa-plus"></i></a>
     </div>
-    <br />
-    @if (TempData["MensagemSucesso"] != null)
-    {
-        <div class="alert alert-success" role="alert">
-            @TempData["MensagemSucesso"]
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    <div class="col-6 ">
+        <div class="input-group rounded">
+            <input type="search" class="form-control rounded" id="pesquisar" placeholder="Pesquisar" aria-label="Search" aria-describedby="search-addon" />
+            <span class="input-group-text border-0" id="search-addon">
+                <i class="fas fa-search"></i>
+            </span>
         </div>
-    }
-
-    @if (TempData["MensagemErro"] != null)
-    {
-        <div class="alert alert-danger" role="alert">
-            @TempData["MensagemErro"]
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    }
-    <br />
-
-    <h1 class="display-4">Lista de Contatos</h1>
-
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">Cliente</th>
-                <th scope="col">Nome</th>
-                <th scope="col">Email</th>
-                <th scope="col">Celular</th>
-                <th scope="col"></th>
-            </tr>
-        </thead>
-        <tbody class="">
-            @if (Model != null && Model.Any())
-            {
-                foreach (ContatoModel contato in Model)
-                {
-                    <tr class="align-middle">
-                        <th scope="row">IF-ES</th>
-                        <td>@contato.Nome</td>
-                        <td>@contato.Email</td>
-                        <td>@contato.Numero</td>
-                        <td>
-                            <div class="btn" role="group">
-                                <a role="button" class="btn btn-warning btn-sm" title="Editar @contato.Nome" asp-controller="Contato" asp-action="Editar" asp-route-id="@contato.Id"><i class="fa-solid fa-pen-to-square"></i></a>
-                                <a role="button" class="btn btn-danger btn-sm" title="Deletar @contato.Nome" asp-controller="Contato" asp-action="Apagar" asp-route-id="@contato.Id"><i class="fa-solid fa-trash-can"></i></a>
-                            </div>
-                        </td>
-                    </tr>
-                }
-            }
-            else
-            {
-                <tr>
-                    <th colspan="5">Não existe contato cadastrado</th>
-                </tr>
-
-            }
-        </tbody>
-    </table>
+    </div>
 </div>
+<br />
 
+
+<div class="row text-center">
+    <div class="col">
+        <br />
+        @if (TempData["MensagemSucesso"] != null)
+        {
+            <div class="alert alert-success" role="alert">
+                @TempData["MensagemSucesso"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+
+        @if (TempData["MensagemErro"] != null)
+        {
+            <div class="alert alert-danger" role="alert">
+                @TempData["MensagemErro"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        }
+        <br />
+
+        <h1 class="display-4">Lista de Contatos</h1>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Celular</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody id="tabelacontatos">
+                @if (Model != null && Model.Any())
+                {
+                    foreach (ContatoModel contato in Model)
+                    {
+                        <tr class="align-middle">
+                            <th scope="row">IF-ES</th>
+                            <td>@contato.Nome</td>
+                            <td>@contato.Email</td>
+                            <td>@contato.Numero</td>
+                            <td>
+                                <div class="btn" role="group">
+                                    <a role="button" class="btn btn-warning btn-sm" title="Editar @contato.Nome" asp-controller="Contato" asp-action="Editar" asp-route-id="@contato.Id"><i class="fa-solid fa-pen-to-square"></i></a>
+                                    <a role="button" class="btn btn-danger btn-sm" title="Deletar @contato.Nome" asp-controller="Contato" asp-action="Apagar" asp-route-id="@contato.Id"><i class="fa-solid fa-trash-can"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <th colspan="5">Não existe contato cadastrado</th>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

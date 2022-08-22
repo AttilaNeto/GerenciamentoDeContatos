@@ -31,9 +31,7 @@
         </nav>
     </header>
     <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+        @RenderBody()
     </div>
 
     <footer class="border-top footer text-center text-muted fixed-bottom">
@@ -48,7 +46,7 @@
     <script src="~/js/jquery.mask.min.js"></script>
     <script src="https://kit.fontawesome.com/3abe2143c5.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
