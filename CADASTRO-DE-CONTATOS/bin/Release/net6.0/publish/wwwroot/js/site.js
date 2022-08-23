@@ -77,3 +77,23 @@ $(document).ready(function () {
         });
     });
 });
+
+$(function () {
+
+    var elementoModal = $('#modal-contato');
+    $('a[data-toggle="ajax-modal"]').click(function (event) {
+
+
+        var url = $(this).data('url');
+        var decodedUrl = decodeURIComponent(url);
+
+        $.get(decodedUrl).done(function (data) {
+            elementoModal.html(data);
+            elementoModal.find('.modal').modal('show');
+        })
+
+
+
+    })
+
+})
