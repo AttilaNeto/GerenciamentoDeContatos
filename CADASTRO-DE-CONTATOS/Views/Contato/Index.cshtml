@@ -3,11 +3,11 @@
     ViewData["Title"] = "Listagem de Contatos";
 }
 
-
+<div id="modal-contato"></div>
 
 <div class="row">
     <div class="col-6">
-        <a class="btn btn-primary rounded-circle btn-lg" title="Adicionar novo contato" asp-controller="Contato" asp-action="Criar"><i class="fa-solid fa-plus"></i></a>
+        <a class="btn btn-primary rounded-circle btn-lg" title="Adicionar novo contato" data-toggle="ajax-modal" data-target="addEmployee" data-url="@Url.Action($"CriarModal")"><i class="fa-solid fa-plus"></i></a>
     </div>
     <div class="col-6 ">
         <div class="input-group rounded">
@@ -65,8 +65,8 @@
                             <td>@contato.Numero</td>
                             <td>
                                 <div class="btn" role="group">
-                                    <a role="button" class="btn btn-warning btn-sm" title="Editar @contato.Nome" asp-controller="Contato" asp-action="Editar" asp-route-id="@contato.Id"><i class="fa-solid fa-pen-to-square"></i></a>
-                                    <a role="button" class="btn btn-danger btn-sm" title="Deletar @contato.Nome" asp-controller="Contato" asp-action="Apagar" asp-route-id="@contato.Id"><i class="fa-solid fa-trash-can"></i></a>
+                                    <a role="button" class="btn btn-warning btn-sm" title="Editar @contato.Nome" data-toggle="ajax-modal" data-target="addEmployee" data-url="@Url.Action($"EditarModal/{@contato.Id}")"><i class="fa-solid fa-pen-to-square"></i></a>
+                                    <a role="button" class="btn btn-danger btn-sm" title="Deletar @contato.Nome" data-toggle="ajax-modal" data-target="addEmployee" data-url="@Url.Action($"ApagarModal/{@contato.Id}")"><i class="fa-solid fa-trash-can"></i></a>
                                 </div>
                             </td>
                         </tr>

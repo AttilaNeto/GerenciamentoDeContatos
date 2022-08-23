@@ -1,1 +1,40 @@
-﻿
+﻿@model ContatoModel;
+<script src="~/js/jquery.mask.min.js"></script>
+<div class="modal fade" id="modal-editar-contato" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Editar Contato</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-controller="Contato" asp-action="Editar" method="post">
+                <div class="modal-body">
+
+
+                    <input type="hidden" asp-for="Id" />
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" asp-for="Nome" class="form-control" autocomplete="off" placeholder="Digite o nome do contato" required>
+                        @Html.ValidationMessageFor(x => x.Nome)
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" asp-for="Email" class="form-control" autocomplete="off" placeholder="Digite o email do contato" required>
+                        @Html.ValidationMessageFor(x => x.Email)
+                    </div>
+                    <div class="form-group">
+                        <label for="numero">Numero</label>
+                        <input type="text" asp-for="Numero" class="form-control sp_celphones" maxlength="15" autocomplete="off" placeholder="Digite o numero do contato" required>
+                        @Html.ValidationMessageFor(x => x.Numero)
+                    </div>
+                    <br />
+
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-secondary" data-bs-dismiss="modal">Voltar</a>
+                    <button class="btn btn-primary" type="submit">Alterar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

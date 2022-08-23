@@ -17,9 +17,9 @@ namespace CADASTRO_DE_CONTATOS.Controllers
             return View(contatos);
         }
 
-        public IActionResult Criar()
+        public IActionResult CriarModal()
         {
-            return View();
+            return PartialView("CriarModal");
         }
 
         [HttpPost]
@@ -35,7 +35,7 @@ namespace CADASTRO_DE_CONTATOS.Controllers
                     return RedirectToAction("Index");
                 }
 
-                return View(contato);
+                return View(Index);
             }
             catch (Exception erro)
             {
@@ -45,10 +45,10 @@ namespace CADASTRO_DE_CONTATOS.Controllers
 
         }
 
-        public IActionResult Editar(int id)
+        public IActionResult EditarModal(int id)
         {
             ContatoModel contato = _contatoRepositorio.ListarPorId(id);
-            return View(contato);
+            return PartialView("EditarModal", contato);
         }
 
         [HttpPost]
@@ -74,10 +74,10 @@ namespace CADASTRO_DE_CONTATOS.Controllers
             }
         }
 
-        public IActionResult Apagar(int id)
+        public IActionResult ApagarModal(int id)
         {
             ContatoModel contato = _contatoRepositorio.ListarPorId(id);
-            return View(contato);
+            return PartialView("ApagarModal", contato);
         }
 
         public IActionResult Deletar(int id)
@@ -103,13 +103,6 @@ namespace CADASTRO_DE_CONTATOS.Controllers
                 return RedirectToAction("Index");
             }
 
-        }
-
-        public PartialViewResult EditarModal(int id)
-        {
-            ContatoModel contato = _contatoRepositorio.ListarPorId(id);
-
-            return PartialView(contato);
         }
 
     }

@@ -18,6 +18,11 @@ namespace CONTROLE_FINANCEIRO.Controllers
             return View();
         }
 
+        public IActionResult Teste()
+        {
+            return PartialView("ModalTeste"); 
+        }
+
         public IActionResult Privacy()
         {
             return View();

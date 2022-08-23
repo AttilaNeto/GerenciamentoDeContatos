@@ -1,0 +1,21 @@
+﻿@model ContatoModel;
+
+<div class="modal fade" id="modal-apagar-contato" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel"><h3>Apagar o contato ?</h3></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Nome: @Model.Nome</p>
+                <p>Email: @Model.Email</p>
+                <p>Numero: @Model.Numero</p>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</a>
+                <a class="btn btn-danger" asp-route-id="@Model.Id" asp-controller="Contato" asp-action="Deletar">Apagar</a>
+            </div>
+        </div>
+    </div>
+</div>
