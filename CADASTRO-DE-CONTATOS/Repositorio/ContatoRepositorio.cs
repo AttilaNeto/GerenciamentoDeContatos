@@ -1,5 +1,6 @@
 ﻿using CADASTRO_DE_CONTATOS.Data;
 using CADASTRO_DE_CONTATOS.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CADASTRO_DE_CONTATOS.Repositorio
 {
@@ -51,7 +52,7 @@ namespace CADASTRO_DE_CONTATOS.Repositorio
 
         public List<ContatoModel> BuscarTodos()
         {
-            return _bancoContext.Contatos.ToList();
+            return _bancoContext.Contatos.Include(c => c.Cliente).ToList();
         }
 
         public ContatoModel ListarPorId(int id)

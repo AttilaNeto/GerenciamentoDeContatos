@@ -27,6 +27,10 @@
                         <input type="text" asp-for="Numero" class="form-control sp_celphones" maxlength="15" autocomplete="off" placeholder="Digite o numero do contato" required>
                         @Html.ValidationMessageFor(x => x.Numero)
                     </div>
+                    <div class="form-group">
+                        <label for="ClienteId" class="control-label">Cliente</label>
+                        <select asp-for="ClienteId" class="form-control" asp-items="ViewBag.ClienteId"></select>
+                    </div>
                     <br />
 
                 </div>

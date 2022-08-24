@@ -1,24 +1,30 @@
-﻿using CADASTRO_DE_CONTATOS.Models;
+﻿using CADASTRO_DE_CONTATOS.Data;
+using CADASTRO_DE_CONTATOS.Models;
 using CADASTRO_DE_CONTATOS.Repositorio;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace CADASTRO_DE_CONTATOS.Controllers
 {
     public class ContatoController : Controller
     {
         private readonly IContatoRepositorio _contatoRepositorio;
-        public ContatoController(IContatoRepositorio contatoRepositorio)
+        private readonly BancoContext _context;
+        public ContatoController(IContatoRepositorio contatoRepositorio, BancoContext context)
         {
             _contatoRepositorio = contatoRepositorio;
+            _context = context;
         }
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            List<ContatoModel> contatos = _contatoRepositorio.BuscarTodos();
-            return View(contatos);
+            var dB_AttilaContext = _context.Contatos.Include(c => c.Cliente);
+            return View(await dB_AttilaContext.ToListAsync());
         }
 
         public IActionResult CriarModal()
         {
+            ViewData["ClienteId"] = new SelectList(_context.Clientes,"Id","Nome");
             return PartialView("CriarModal");
         }
 
@@ -35,7 +41,7 @@ namespace CADASTRO_DE_CONTATOS.Controllers
                     return RedirectToAction("Index");
                 }
 
-                return View(Index);
+                return NotFound();
             }
             catch (Exception erro)
             {

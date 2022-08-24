@@ -13,5 +13,7 @@ namespace CADASTRO_DE_CONTATOS.Models
         public string Email { get; set; }
         [Required(ErrorMessage = "Digite o numero do contato")]
         public string Numero { get; set; }
+        public int ClienteId { get; set; }
+        public ClienteModel? Cliente { get; set; }
     }
 }

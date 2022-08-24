@@ -2,7 +2,6 @@
 @{
     ViewData["Title"] = "Listagem de Contatos";
 }
-
 <div id="modal-contato"></div>
 
 <div class="row">
@@ -54,10 +53,10 @@
             <tbody id="tabelacontatos">
                 @if (Model != null && Model.Any())
                 {
-                    foreach (ContatoModel contato in Model)
+                    foreach (var contato in Model)
                     {
                         <tr class="align-middle">
-                            <th scope="row">IF-ES</th>
+                            <th scope="row">@contato.Cliente.Nome</th>
                             <td>@contato.Nome</td>
                             <td>@contato.Email</td>
                             <td>@contato.Numero</td>
