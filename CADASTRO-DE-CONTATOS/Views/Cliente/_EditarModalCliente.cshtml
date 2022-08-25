@@ -1,0 +1,28 @@
+﻿@model CADASTRO_DE_CONTATOS.Models.ClienteModel
+
+<div class="modal fade" id="modal-editar-contato" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Editar Cliente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form asp-controller="Cliente" asp-action="Editar" method="post">
+                <div class="modal-body">
+
+                    <input type="hidden" asp-for="Id" />
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" asp-for="Nome" class="form-control" autocomplete="off" placeholder="Digite o nome do cliente" required>
+                    </div>
+                    <br />
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-secondary" data-bs-dismiss="modal">Voltar</a>
+                    <button class="btn btn-primary" type="submit">Alterar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

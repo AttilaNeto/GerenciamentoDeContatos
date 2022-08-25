@@ -15,36 +15,36 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\#PROJETOS\CADASTRO-DE-CONTATOS\CADASTRO-DE-CONTATOS
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Contato/ApagarModal.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b1xBcGFnYXJNb2RhbC5jc2h0bWw=
+[D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Contato/CriarModal.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b1xDcmlhck1vZGFsLmNzaHRtbA==
+[D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Cliente/_ApagarModalCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxfQXBhZ2FyTW9kYWxDbGllbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Contato/EditarModal.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b1xFZGl0YXJNb2RhbC5jc2h0bWw=
+[D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Cliente/_CriarModalCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxfQ3JpYXJNb2RhbENsaWVudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Cliente/_EditarModalCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxfRWRpdGFyTW9kYWxDbGllbnRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Contato/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Contato/_ApagarModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b1xfQXBhZ2FyTW9kYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Home/ModalTeste.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNb2RhbFRlc3RlLmNzaHRtbA==
+[D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Contato/_CriarModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b1xfQ3JpYXJNb2RhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Contato/_EditarModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b1xfRWRpdGFyTW9kYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/\#PROJETOS/CADASTRO-DE-CONTATOS/CADASTRO-DE-CONTATOS/Views/Shared/_ValidationScriptsPartial.cshtml]

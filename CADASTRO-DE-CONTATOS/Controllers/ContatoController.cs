@@ -25,7 +25,7 @@ namespace CADASTRO_DE_CONTATOS.Controllers
         public IActionResult CriarModal()
         {
             ViewData["ClienteId"] = new SelectList(_context.Clientes,"Id","Nome");
-            return PartialView("CriarModal");
+            return PartialView("_CriarModal");
         }
 
         [HttpPost]
@@ -54,7 +54,7 @@ namespace CADASTRO_DE_CONTATOS.Controllers
         public IActionResult EditarModal(int id)
         {
             ContatoModel contato = _contatoRepositorio.ListarPorId(id);
-            return PartialView("EditarModal", contato);
+            return PartialView("_EditarModal", contato);
         }
 
         [HttpPost]
@@ -83,7 +83,7 @@ namespace CADASTRO_DE_CONTATOS.Controllers
         public IActionResult ApagarModal(int id)
         {
             ContatoModel contato = _contatoRepositorio.ListarPorId(id);
-            return PartialView("ApagarModal", contato);
+            return PartialView("_ApagarModal", contato);
         }
 
         public IActionResult Deletar(int id)

@@ -102,5 +102,5 @@ $(document).ready(function () {
         $(".alert").fadeOut("slow", function () {
             $(this).alert('close');
         });
-    }, 1200);
+    }, 2000);
 });
