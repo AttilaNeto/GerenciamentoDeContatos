@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kEhl/ciASSwvFaL6VGCFpkSSSV7NkFFmwaX26Fq8DGeLSxBX5Cx0zVcVnOmSYToMWtEs3emUivnNVsXOxUuCfw==",
+  "dgSpecHash": "uzhZMKQNkYjcW4rE5XF7PrmW9fzn2CjYCExxEUhfvuRn8u0Ze/HXPw8Lvn5e13XfY03IkolgXZmifc4Ez/Lozw==",
   "success": true,
-  "projectFilePath": "D:\\#PROJETOS\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS.csproj",
+  "projectFilePath": "C:\\Users\\Attila\\source\\repos\\CADASTRO-DE-CONTATOSss\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Attila\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Attila\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

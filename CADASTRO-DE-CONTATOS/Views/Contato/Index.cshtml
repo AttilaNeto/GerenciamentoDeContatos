@@ -1,12 +1,10 @@
 ﻿@model List<ContatoModel>;
-@{
-    ViewData["Title"] = "Listagem de Contatos";
-}
+
 <div id="modal-contato"></div>
 
 <div class="row">
     <div class="col-6">
-        <a class="btn btn-primary rounded-circle btn-lg" title="Adicionar novo contato" data-toggle="ajax-modal" data-target="addEmployee" data-url="@Url.Action($"CriarModal")"><i class="fa-solid fa-plus"></i></a>
+        <a class="btn btn-primary rounded-circle btn-lg" title="Adicionar novo contato" data-toggle="ajax-modal" data-url="@Url.Action($"CriarModal")"><i class="fa-solid fa-plus"></i></a>
     </div>
     <div class="col-6 ">
         <div class="input-group rounded">

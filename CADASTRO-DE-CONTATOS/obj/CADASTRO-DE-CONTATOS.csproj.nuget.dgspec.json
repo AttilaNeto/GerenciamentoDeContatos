@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\#PROJETOS\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS.csproj": {}
+    "C:\\Users\\Attila\\source\\repos\\CADASTRO-DE-CONTATOSss\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS.csproj": {}
   },
   "projects": {
-    "D:\\#PROJETOS\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS.csproj": {
+    "C:\\Users\\Attila\\source\\repos\\CADASTRO-DE-CONTATOSss\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\#PROJETOS\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS.csproj",
+        "projectUniqueName": "C:\\Users\\Attila\\source\\repos\\CADASTRO-DE-CONTATOSss\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS.csproj",
         "projectName": "CADASTRO-DE-CONTATOS",
-        "projectPath": "D:\\#PROJETOS\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS.csproj",
+        "projectPath": "C:\\Users\\Attila\\source\\repos\\CADASTRO-DE-CONTATOSss\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS.csproj",
         "packagesPath": "C:\\Users\\Attila\\.nuget\\packages\\",
-        "outputPath": "D:\\#PROJETOS\\CADASTRO-DE-CONTATOS\\CADASTRO-DE-CONTATOS\\obj\\",
+        "outputPath": "C:\\Users\\Attila\\source\\repos\\CADASTRO-DE-CONTATOSss\\CADASTRO-DE-CONTATOS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Attila\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
