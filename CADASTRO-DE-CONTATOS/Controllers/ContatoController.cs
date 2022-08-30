@@ -19,12 +19,15 @@ namespace CADASTRO_DE_CONTATOS.Controllers
         public async Task<IActionResult> Index()
         {
             var dB_AttilaContext = _context.Contatos.Include(c => c.Cliente);
-            return View(await dB_AttilaContext.ToListAsync());
+            
+            return _context.Contatos != null ? 
+                        View(await dB_AttilaContext.ToListAsync()) :
+                        Problem("problema");
         }
 
         public IActionResult CriarModal()
         {
-            ViewData["ClienteId"] = new SelectList(_context.Clientes,"Id","Nome");
+            ViewData["ClienteId"] = new SelectList(_context.Clientes, "Id", "Nome");
             return PartialView("_CriarModal");
         }
 
