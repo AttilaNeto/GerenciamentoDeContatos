@@ -1,6 +1,6 @@
 ﻿using CADASTRO_DE_CONTATOS.Data;
 using CADASTRO_DE_CONTATOS.Models;
-using CADASTRO_DE_CONTATOS.Repositorio;
+using CADASTRO_DE_CONTATOS.Repositorio.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;

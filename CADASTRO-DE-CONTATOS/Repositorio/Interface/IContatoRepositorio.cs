@@ -1,6 +1,6 @@
 ﻿using CADASTRO_DE_CONTATOS.Models;
 
-namespace CADASTRO_DE_CONTATOS.Repositorio
+namespace CADASTRO_DE_CONTATOS.Repositorio.Interface
 {
     public interface IContatoRepositorio
     {

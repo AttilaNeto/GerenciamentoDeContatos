@@ -1,5 +1,6 @@
 ﻿using CADASTRO_DE_CONTATOS.Data;
 using CADASTRO_DE_CONTATOS.Models;
+using CADASTRO_DE_CONTATOS.Repositorio.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace CADASTRO_DE_CONTATOS.Repositorio
