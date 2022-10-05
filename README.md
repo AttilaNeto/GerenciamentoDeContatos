@@ -1,5 +1,5 @@
 # CADASTRO-DE-CONTATOS
-Lista de Contato desenvolvido em ASP NET MVC + EntityFramework CodeFirst + SQL Server
+Lista de Contato desenvolvido em ASP NET CORE MVC + EntityFramework CodeFirst + SQL Server
 
 Para utilizar a lista de contatos, basta ir no arquivo appsettings.json e alterar a 
 string de conexão com as configurações do seu banco sql server.
